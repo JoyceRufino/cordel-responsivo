@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
 html, body{
     min-width: 100vh;
     background-color: darkgray;
-    font-family: sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 header{
@@ -21,6 +23,7 @@ header{
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 3em;
 }
 
 header > p {
@@ -51,7 +54,7 @@ section.image{
     color: white;
 }
 section.image > p {
-    width: 400px;
+    display: inline-block;
     background-color: #4d8c8128;
     padding: 10px;
 }
@@ -60,4 +63,16 @@ footer{
     color: #fafafa;
     text-align: center;
     padding: 15px;
+}
+
+@media screen and (max-width: 768px ) {
+    section{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section{
+        font-size: 22px;
+    }    
 }
